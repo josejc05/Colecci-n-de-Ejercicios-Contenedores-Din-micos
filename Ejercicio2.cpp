@@ -38,3 +38,12 @@ int main() {
     cout << "Después de pop(), top: " << miPila.top() << endl;
 
     mostrarLista(miLista);
+    miPila.push(6.6);
+    cout << "Después de push(6.6), top: " << miPila.top() << endl;
+
+    mostrarLista(miLista);
+
+    mostrarPila(miPila);
+
+    return 0;
+}
