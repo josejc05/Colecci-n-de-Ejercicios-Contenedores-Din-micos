@@ -13,4 +13,17 @@ int main() {
     cout << endl;
 
     cout << "Suma: " << (valores.sum()) << endl;
+    valores -= 2.0;
+    cout << "Valores - 2.0: ";
+    for (double valor : valores) {
+        cout << valor << " ";
+    }
+    cout << endl;
+
+    valores *= 3.0;
+    cout << "Valores * 3.0: ";
+    for (double valor : valores) {
+        cout << valor << " ";
+    }
+    cout << endl;
 
