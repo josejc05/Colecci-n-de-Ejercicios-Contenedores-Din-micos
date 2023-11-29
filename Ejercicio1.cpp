@@ -10,3 +10,20 @@ void mostrarVector(const vector<int>& v) {
     }
     cout << endl;
 }
+int calcularSuma(const vector<int>& v) {
+    int suma = 0;
+    for (const int& elemento : v) {
+        suma += elemento;
+    }
+    return suma;
+}
+
+int encontrarMaximo(const vector<int>& v) {
+    int maximo = v[0];
+    for (const int& elemento : v) {
+        if (elemento > maximo) {
+            maximo = elemento;
+        }
+    }
+    return maximo;
+}
