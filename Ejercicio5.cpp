@@ -14,3 +14,10 @@ int main() {
     for_each(numeros.begin(), numeros.end(), [](int num) {
         cout << num << " ";
     });
+    cout << endl;
+
+    shared_ptr<int> ptr = make_shared<int>(10);
+    cout << "Valor apuntado por ptr: " << *ptr << endl;
+
+    return 0;
+}
