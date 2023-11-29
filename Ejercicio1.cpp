@@ -27,3 +27,19 @@ int encontrarMaximo(const vector<int>& v) {
     }
     return maximo;
 }
+int main() {
+    vector<int> miVector;
+
+    miVector.push_back(10);
+    miVector.push_back(20);
+    miVector.push_back(30);
+    miVector.push_back(40);
+
+    mostrarVector(miVector);
+
+    cout << "Suma de los elementos: " << calcularSuma(miVector) << endl;
+
+    cout << "Valor máximo en el vector: " << encontrarMaximo(miVector) << endl;
+
+    return 0;
+}
