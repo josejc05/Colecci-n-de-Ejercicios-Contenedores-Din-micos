@@ -12,3 +12,15 @@ int main() {
     for(int num : numeros) {
         cout << num << " ";
     }
+    cout << endl;
+
+    auto maxElement = max_element(numeros.begin(), numeros.end());
+    if (maxElement != numeros.end()) {
+        int maxNum = *maxElement;
+        cout << "Número máximo: " << maxNum << endl;
+    } else {
+        cout << "El vector está vacío." << endl;
+    }
+
+    return 0;
+}
