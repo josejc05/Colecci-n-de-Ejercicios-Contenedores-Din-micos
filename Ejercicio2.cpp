@@ -20,3 +20,21 @@ void mostrarPila(stack<double, list<double>>& pila) {
     }
     cout << endl;
 }
+int main() {
+    list<double> miLista = {1.1, 2.2, 3.3, 4.4};
+
+    stack<double, list<double>> miPila(miLista);
+
+    cout << "Operaciones en la lista y la pila:" << endl;
+
+    mostrarLista(miLista);
+
+    miPila.push(5.5);
+    cout << "Después de push(5.5), top: " << miPila.top() << endl;
+
+    mostrarLista(miLista);
+
+    miPila.pop();
+    cout << "Después de pop(), top: " << miPila.top() << endl;
+
+    mostrarLista(miLista);
