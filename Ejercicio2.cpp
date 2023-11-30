@@ -13,3 +13,15 @@ int main() {
         cout << pila.top() << endl;
         pila.pop();
     }
+
+    pila.push(6.6);
+    pila.push(7.7);
+
+    cout << "\nContenido de la pila después de push:" << endl;
+    while (!pila.empty()) {
+        cout << pila.top() << endl;
+        pila.pop();
+    }
+
+    return 0;
+}
